@@ -1,16 +1,12 @@
-
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
 dataset = pd.read_csv('Salary_VS_Experience.csv')
-
 dataset = dataset.fillna(' ')
 
 X = dataset.iloc[:, :-1].values
 Y = dataset.iloc[:, 1].values # Dependent Variable/Target Values
-
-
 
 # Splitting the Dataset into Training Set and Test Set
 from sklearn.cross_validation import train_test_split
